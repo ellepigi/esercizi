@@ -1,8 +1,8 @@
-let bottone = document.getElementById ("bottone")
+let btn = document.getElementById ("btn")
 let list = document.getElementById ("list")
-// bottone.addEventListener("click", aggiungiTask() );
 let input = document.getElementById ("input")
 let form = document.getElementById ("form")
+const deletediv = document.getElementById("delete-all")
 
 
 
@@ -52,12 +52,12 @@ form.addEventListener("submit", (e) => {
            
            
         
-        var newli = document.createElement ("li")
+        let newli = document.createElement ("li")
         
 
-        var newinput= document.createElement ("input")
+        let newinput= document.createElement ("input")
         newinput.className = "newinput"
-        var savebutton = document.createElement ("button")
+        let savebutton = document.createElement ("button")
         
         savebutton.setAttribute ("type", "button")
         savebutton.className = "save"
@@ -99,8 +99,20 @@ form.addEventListener("submit", (e) => {
         
         
     })
-    
 
+   
+           deletediv.style.display="block"
+              
+      
         
+   
+
+    deletediv.addEventListener("click", () => {
+        task.remove()
+        deletediv.style.display="none"
+
+    })
+    
+  
 })
 
