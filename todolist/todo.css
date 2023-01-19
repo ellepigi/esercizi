@@ -5,7 +5,6 @@
 body {
     display: flex;
     justify-content: center;
-    /* background-image: linear-gradient(45deg, rgb(10, 10, 19), rgb(44, 42, 65)); */
 
     font-family: 'Roboto' , sans-serif;
 }
@@ -51,18 +50,25 @@ li::marker {
 }
 
 #btn {
-    width: 80px;
+    width: 40px;
     height: 40px;
     border: 1px solid #bbb9b9;
-    /* border-radius: 10px; */
-    margin-left: 10px;
+    margin-left: 0px;
     font-family: inherit;
-    /* box-shadow: 7px 4px 12px 2px rgba(0,0,0,0.57) */
+    font-size: 2rem;
 }
 
 #btn:hover{
     background-color: #bbb9b9;
     color: white;
+}
+
+#input:focus{
+    outline: none;
+}
+
+.box{
+    display: flex;
 }
 
 /* .container {
