@@ -4,6 +4,9 @@ let input = document.getElementById("input");
 let form = document.getElementById("form");
 const deletediv = document.getElementById("delete-all");
 
+
+
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -79,4 +82,5 @@ form.addEventListener("submit", (e) => {
       }
     });
   });
+  
 });
